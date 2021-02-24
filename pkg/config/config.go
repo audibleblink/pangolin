@@ -31,14 +31,18 @@ func NewConfig() *Config {
 	}
 }
 
+func NewConfigFromBytes(data []byte) (*Config, error) {
+	cfg := NewConfig()
+	err := cfg.Unmarshal(data)
+	return cfg, err
+}
+
 func NewConfigFromFile(file string) (*Config, error) {
 	data, err := ioutil.ReadFile(file)
 	if err != nil {
 		return nil, err
 	}
-	cfg := NewConfig()
-	err = cfg.Unmarshal(data)
-	return cfg, err
+	return NewConfigFromBytes(data)
 }
 
 func (cfg *Config) Unmarshal(data []byte) error {
