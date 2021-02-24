@@ -1,6 +1,7 @@
 package main
 
 import (
+	_ "embed"
 	"flag"
 	"os"
 	"sync"
@@ -11,7 +12,9 @@ import (
 	"github.com/audibleblink/pangolin/pkg/server"
 )
 
-var configFile = flag.String("c", "cfg.json", "")
+//go:embed cfg.json
+var configBytes []byte
+var configFile = flag.String("c", "", "")
 var logLevel = flag.String("l", "info", "")
 
 func main() {
@@ -24,10 +27,17 @@ func main() {
 	flag.Parse()
 	logging.SetLevel(*logLevel)
 
-	cfg, err := config.NewConfigFromFile(*configFile)
+	var cfg *config.Config
+	if *configFile == "" {
+		cfg, err = config.NewConfigFromBytes(configBytes)
+	} else {
+		cfg, err = config.NewConfigFromFile(*configFile)
+	}
 	if err != nil {
+		logging.Log.Error(err)
 		os.Exit(-1)
 	}
+
 	logging.Log.Info(cfg.String())
 
 	if cfg.Role == "server" {
