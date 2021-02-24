@@ -5,10 +5,10 @@ import (
 	"os"
 	"sync"
 
-	"github.com/audibleblink/pangolin/client"
-	"github.com/audibleblink/pangolin/config"
-	"github.com/audibleblink/pangolin/logging"
-	"github.com/audibleblink/pangolin/server"
+	"github.com/audibleblink/pangolin/pkg/client"
+	"github.com/audibleblink/pangolin/pkg/config"
+	"github.com/audibleblink/pangolin/pkg/logging"
+	"github.com/audibleblink/pangolin/pkg/server"
 )
 
 var configFile = flag.String("c", "cfg.json", "")
