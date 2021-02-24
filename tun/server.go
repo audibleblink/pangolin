@@ -3,9 +3,9 @@ package tun
 import (
 	"time"
 
-	"github.com/xitongsys/ethernet-go/header"
-	"github.com/xitongsys/pangolin/cache"
-	"github.com/xitongsys/pangolin/logging"
+	"github.com/audibleblink/ethernet-go/header"
+	"github.com/audibleblink/pangolin/cache"
+	"github.com/audibleblink/pangolin/logging"
 )
 
 var TUNCHANBUFFSIZE = 1024

@@ -5,10 +5,10 @@ import (
 	"os"
 	"sync"
 
-	"github.com/xitongsys/pangolin/client"
-	"github.com/xitongsys/pangolin/config"
-	"github.com/xitongsys/pangolin/logging"
-	"github.com/xitongsys/pangolin/server"
+	"github.com/audibleblink/pangolin/client"
+	"github.com/audibleblink/pangolin/config"
+	"github.com/audibleblink/pangolin/logging"
+	"github.com/audibleblink/pangolin/server"
 )
 
 var configFile = flag.String("c", "cfg.json", "")

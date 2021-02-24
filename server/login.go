@@ -5,9 +5,9 @@ import (
 	"net"
 	"sync"
 
-	"github.com/xitongsys/pangolin/config"
-	"github.com/xitongsys/pangolin/logging"
-	"github.com/xitongsys/pangolin/tun"
+	"github.com/audibleblink/pangolin/config"
+	"github.com/audibleblink/pangolin/logging"
+	"github.com/audibleblink/pangolin/tun"
 )
 
 //todo: add sync.Mutx for Users change

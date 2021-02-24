@@ -5,10 +5,10 @@ import (
 	"net"
 	"time"
 
-	"github.com/xitongsys/ethernet-go/header"
-	"github.com/xitongsys/pangolin/cache"
-	"github.com/xitongsys/pangolin/config"
-	"github.com/xitongsys/pangolin/logging"
+	"github.com/audibleblink/ethernet-go/header"
+	"github.com/audibleblink/pangolin/cache"
+	"github.com/audibleblink/pangolin/config"
+	"github.com/audibleblink/pangolin/logging"
 )
 
 var UDPCHANBUFFERSIZE = 1024

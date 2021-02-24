@@ -3,9 +3,9 @@ package server
 import (
 	"net"
 
-	"github.com/xitongsys/pangolin/config"
-	"github.com/xitongsys/pangolin/logging"
-	"github.com/xitongsys/pangolin/util"
+	"github.com/audibleblink/pangolin/config"
+	"github.com/audibleblink/pangolin/logging"
+	"github.com/audibleblink/pangolin/util"
 )
 
 type TcpServer struct {

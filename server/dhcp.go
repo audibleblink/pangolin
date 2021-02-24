@@ -3,8 +3,8 @@ package server
 import (
 	"fmt"
 
-	"github.com/xitongsys/ethernet-go/header"
-	"github.com/xitongsys/pangolin/config"
+	"github.com/audibleblink/ethernet-go/header"
+	"github.com/audibleblink/pangolin/config"
 )
 
 type Dhcp struct {

@@ -3,11 +3,11 @@ package server
 import (
 	"net"
 
-	"github.com/xitongsys/ethernet-go/header"
-	"github.com/xitongsys/pangolin/encrypt"
-	"github.com/xitongsys/pangolin/logging"
-	"github.com/xitongsys/pangolin/protocol"
-	"github.com/xitongsys/pangolin/util"
+	"github.com/audibleblink/ethernet-go/header"
+	"github.com/audibleblink/pangolin/encrypt"
+	"github.com/audibleblink/pangolin/logging"
+	"github.com/audibleblink/pangolin/protocol"
+	"github.com/audibleblink/pangolin/util"
 )
 
 var USERCHANBUFFERSIZE = 1024

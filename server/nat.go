@@ -1,7 +1,7 @@
 package server
 
 import (
-	"github.com/xitongsys/ethernet-go/header"
+	"github.com/audibleblink/ethernet-go/header"
 )
 
 func Snat(data []byte, src string) {

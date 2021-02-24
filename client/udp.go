@@ -3,10 +3,10 @@ package client
 import (
 	"net"
 
-	"github.com/xitongsys/ethernet-go/header"
-	"github.com/xitongsys/pangolin/config"
-	"github.com/xitongsys/pangolin/logging"
-	"github.com/xitongsys/pangolin/tun"
+	"github.com/audibleblink/ethernet-go/header"
+	"github.com/audibleblink/pangolin/config"
+	"github.com/audibleblink/pangolin/logging"
+	"github.com/audibleblink/pangolin/tun"
 )
 
 type UdpClient struct {
